@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #32CD32;
+    --cor-terciaria: #0F6292;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tinos', serif;
+    line-height: 1.6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    margin: 0;
+}
+
+/* Cabeçalho - Ajustado para centralizar */
+.cabecalho {
+    padding: 20px; /* Padding consistente em todos os lados */
+    width: 100%; /* Ocupa toda a largura da página */
+    background-color: var(--cor-primaria); /* Cor de fundo escura para contraste */
+    text-align: center;
+}
+
+
+.cabecalho__menu {
+    display: inline-flex; /* Torna o menu um elemento inline-flex para o text-align funcionar */
+    gap: 30px;
+    justify-content: center; /* Centraliza os links do menu */
+    list-style: none; /* Remove marcadores de lista se você estiver usando <ul> ou <ol> */
+    width: 100%;
+
+}
+
+.cabecalho__menu__link {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+/* Estilos gerais */
+h1, h2, h3, p {
+    color: var(--cor-terciaria);
+}
+
+a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+strong {
+    color: var(--cor-secundaria);
+}
+
+/* Apresentação (index, about, portfolio, technology) */
+main.apresentacao {
+    padding: 10% 15%;
+    display: flex;
+    flex-direction: column; /* Torna o layout em coluna na página technology*/
+    align-items: flex-start; 
+    gap: 40px;
+}
+
+.apresentacao__conteudo {
+    width: 100%; /* Ocupa toda a largura na página technology */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2em;
+    color: var(--cor-secundaria);
+    align-self:center;
+
+}
+
+.apresentacao__conteudo_subtitulo {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.apresentacao__conteudo_paragrafo {
+    font-size: 1.1em;
+}
+
+.apresentacao__links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente os links */
+    width: auto; /* Remove largura desnecessária */
+    padding: 0; /* Remove padding desnecessário */
+}
+
+.apresentacao__links__link {
+    border: 5px dotted var(--cor-secundaria);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0; /* Remove padding desnecessário */
+    color: var(--cor-terciaria);
+    display: flex; /* Permite o alinhamento centralizado da imagem*/
+    align-items: center; /* Centraliza a imagem verticalmente */
+    justify-content: center; /* Centraliza a imagem horizontalmente*/
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor */
+}
+
+.apresentacao__links__link img {
+    max-width: 100%; /* Garante que a imagem caiba dentro do link */
+    max-height: 100%;
+}
+.apresentacao__links__link:hover {
+    background-color: var(--cor-primaria);
+}
+
+
+.apresentacao__links__subtitulo {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+.foto-perfil {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    display: block; /* Para centralizar, certifique-se que é um elemento de bloco */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* Seções (exposições, festivais, etc.) */
+section {
+    padding: 5%;
+    width: auto;  /* Remove largura fixa */
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+
+
+section h2, h3 {
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;  /* Adicione margem inferior consistente */
+}
+
+section div {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 15px;
+    border: none; /* Remove borda */
+    background-color: var(--cor-primaria);
+}
+
+
+
+
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: block;  /* Torna a imagem um elemento de bloco */
+    margin-left: auto; /* Centraliza horizontalmente a imagem */
+    margin-right: auto;
+}
+
+
+/* Estilos para a página technology.html */
+
+.formacao, .cursos {
+    padding: 5%;  /* Adiciona padding consistente */
+
+}
+
+
+
+.formacao h3 {
+   margin-top:10px; /* Ajusta espaço antes do título */
+
+}
+
+.formacao ul,
+.cursos ul{
+  list-style-type: square;  /* Altera o estilo do marcador */
+   margin-left: 20px; /* Adiciona indentação */
+
+}
+
+
+.link-externo {
+    display: block; /* Para centralizar, torna um elemento de bloco */
+    margin: 10px auto; /* Adiciona margem inferior e superior */
+    width: auto; /* Ajusta a largura ao conteúdo */
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-secundaria); /* Adicionada borda */
+    color: var(--cor-secundaria);
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;  /* Centraliza texto no botão */
+}
+
+.link-externo:hover{
+background-color:darkslategray;
+
+}
+
+
+
+/* Rodapé */
+footer {
+    padding: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: lime;
+    background-color: black;
+    margin-top: 40px;  /* Espaço entre o conteúdo principal e o rodapé */
+    width: auto;
+}
