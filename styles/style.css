@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #32CD32;
-    --cor-terciaria: #0F6292;
+    --cor-primaria: #09122C;
+    --cor-secundaria: #FADA7A;
+    --cor-terciaria: #F4EDD3;
 }
 
 * {
