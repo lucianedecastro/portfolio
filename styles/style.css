@@ -165,7 +165,6 @@ main.apresentacao {
     display: block;
     margin: 0 auto;  /* Centraliza a imagem horizontalmente */
     margin-top: 40px;
-    border: 5px solid var(--cor-secundaria);
 }
 
 /* Seções */
