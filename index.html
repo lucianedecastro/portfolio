@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,39 +10,22 @@
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
     <link rel="stylesheet" href="./styles/style.css">
 
-    <meta
-        name="description"
-        content="Portfólio de Lu Castro: pesquisa, curadoria, audiovisual e tecnologia aplicadas às narrativas esportivas, memória e cultura do esporte."
-    >
+    <meta name="description" content="Portfólio de Lu Castro: pesquisa, curadoria, audiovisual e tecnologia aplicadas às narrativas esportivas, memória e cultura do esporte.">
 
-    <meta property="og:title"
-        content="Lu Castro | Narrativas esportivas, cultura e tecnologia" />
-
-    <meta property="og:description"
-        content="Pesquisa, curadoria, escrita, audiovisual e tecnologia conectadas ao esporte sob o viés cultural." />
-
-    <meta property="og:image"
-        content="https://www.portfoliolucastro.com.br/assets/foto_perfil.jpeg" />
-
+    <meta property="og:title" content="Lu Castro | Narrativas esportivas, cultura e tecnologia" />
+    <meta property="og:description" content="Pesquisa, curadoria, escrita, audiovisual e tecnologia conectadas ao esporte sob o viés cultural." />
+    <meta property="og:image" content="https://www.portfoliolucastro.com.br/assets/foto_perfil.jpeg" />
     <meta property="og:image:type" content="image/webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
-    <meta property="og:url"
-        content="https://www.portfoliolucastro.com.br" />
-
+    <meta property="og:url" content="https://www.portfoliolucastro.com.br" />
     <meta property="og:type" content="website" />
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LEYHMF0T8"></script>
-
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-7LEYHMF0T8');
     </script>
@@ -52,106 +34,143 @@
 <body>
 
     <header class="cabecalho">
-
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">
-                Home
-            </a>
-
-            <a class="cabecalho__menu__link" href="about.html">
-                Sobre Mim
-            </a>
-
-            <a class="cabecalho__menu__link" href="portfolio.html">
-                Trabalhos Realizados
-            </a>
-
-            <a class="cabecalho__menu__link" href="technology.html">
-                Tecnologia
-            </a>
+        <nav class="cabecalho__nav">
+            <span class="cabecalho__logo">Lu Castro</span>
+            <div class="cabecalho__links">
+                <a class="cabecalho__link ativo" href="index.html">Home</a>
+                <a class="cabecalho__link" href="about.html">Sobre mim</a>
+                <a class="cabecalho__link" href="portfolio.html">Trabalhos</a>
+                <a class="cabecalho__link" href="technology.html">Tecnologia</a>
+            </div>
         </nav>
-
     </header>
 
     <main>
 
-        <section class="apresentacao-home">
-
-            <div class="apresentacao__conteudo">
-
-                <span class="tag-conceito">
-                    Narrativas esportivas • Cultura • Tecnologia
-                </span>
-
-                <h1 class="titulo-principal">
-                    Luciane de Castro
+        <section class="hero">
+            <div class="hero__texto">
+                <div class="eyebrow">Pesquisa · Cultura · Tecnologia</div>
+                <h1 class="hero__titulo">
+                    Onde o esporte<br>
+                    encontra a <em>memória</em><br>
+                    e o código.
                 </h1>
-
-                <h2 class="subtitulo-home">
-                    Narrativas esportivas, cultura e tecnologia conectadas
-                </h2>
-
-                <p class="texto-home">
-                    Pesquisa, curadoria, escrita, audiovisual e desenvolvimento
-                    de soluções voltadas à memória, cultura e inovação no esporte.
+                <p class="hero__bio">
+                    Duas décadas construindo narrativas sobre o futebol feminino brasileiro.
+                    Agora também desenvolvendo as plataformas que preservam e amplificam essas histórias.
                 </p>
-
-                <p class="texto-home texto-secundario">
-                    Jornalista, pesquisadora e curadora com atuação no esporte
-                    sob o viés cultural, articulando memória, tecnologia e
-                    narrativas esportivas para construir experiências,
-                    projetos e conhecimento.
-                </p>
-
-                <div class="apresentacao__acoes">
-
-                    <a class="botao-principal"
-                        href="portfolio.html">
-                        Explorar trabalhos
-                    </a>
-
-                    <a class="botao-secundario"
-                        href="technology.html">
-                        Tecnologia aplicada
-                    </a>
-
+                <div class="hero__acoes">
+                    <a href="portfolio.html" class="btn-primario">Ver trabalhos</a>
+                    <a href="technology.html" class="btn-fantasma">Tecnologia</a>
                 </div>
-
-                <div class="apresentacao__links">
-
-                    <a
-                        class="apresentacao__links__link"
-                        href="https://github.com/lucianedecastro"
-                        target="_blank"
-                        title="Acesse meu Github"
-                    >
-                        <img
-                            src="assets/github.png"
-                            alt="Ícone do Github">
+                <div class="hero__social">
+                    <a href="https://github.com/lucianedecastro" target="_blank" title="GitHub de Lu Castro" class="social-link">
+                        <img src="assets/github.png" alt="GitHub">
                     </a>
-
                 </div>
-
             </div>
 
-            <div class="container-imagem">
-                <img
-                    class="foto-perfil"
-                    src="assets/foto_perfil.jpeg"
-                    alt="Foto de perfil de Lu Castro">
+            <div class="hero__numeros">
+                <div class="num-item">
+                    <span class="num-valor">+20</span>
+                    <span class="num-label">Anos de pesquisa em futebol feminino</span>
+                </div>
+                <div class="num-item">
+                    <span class="num-valor">7</span>
+                    <span class="num-label">Exposições curadas</span>
+                </div>
+                <div class="num-item">
+                    <span class="num-valor">4</span>
+                    <span class="num-label">Plataformas com registro INPI</span>
+                </div>
+                <div class="num-item">
+                    <span class="num-valor">1ª</span>
+                    <span class="num-label">Copa de Literatura de Futebol Feminino</span>
+                </div>
             </div>
+        </section>
 
+        <div class="divisor">
+            <span class="divisor__losango"></span>
+        </div>
+
+        <section class="projetos">
+            <div class="sec-header">
+                <h2 class="sec-titulo">Projetos em desenvolvimento</h2>
+                <a href="technology.html" class="sec-link">Ver todos →</a>
+            </div>
+            <div class="grade-proj">
+
+                <a href="https://www.acervodaatletabrasileira.com.br/" target="_blank" class="proj-card">
+                    <span class="proj-tag">Memória · Acervo</span>
+                    <h3 class="proj-nome">Acervo "Carmen Lydia"</h3>
+                    <p class="proj-desc">Preservação e licenciamento ético dos acervos pessoais de atletas brasileiras.</p>
+                    <span class="proj-stack">React · Java · Spring Boot · MongoDB · AWS</span>
+                    <span class="proj-arrow">→</span>
+                </a>
+
+                <a href="https://www.atletahub.com.br/" target="_blank" class="proj-card">
+                    <span class="proj-tag">Conexão · Sponsorship</span>
+                    <h3 class="proj-nome">AtletaHub</h3>
+                    <p class="proj-desc">Match inteligente entre atletas e marcas patrocinadoras.</p>
+                    <span class="proj-stack">React · Java · Spring Boot · PostgreSQL</span>
+                    <span class="proj-arrow">→</span>
+                </a>
+
+                <a href="https://www.legacykick.com.br/" target="_blank" class="proj-card">
+                    <span class="proj-tag">Jogo · Educação</span>
+                    <h3 class="proj-nome">Legacy Kick</h3>
+                    <p class="proj-desc">Narrativa interativa 8-bit sobre a história do futebol feminino.</p>
+                    <span class="proj-stack">JavaScript · HTML5 · CSS3</span>
+                    <span class="proj-arrow">→</span>
+                </a>
+
+                <a href="https://www.copadasautoras.com.br/" target="_blank" class="proj-card">
+                    <span class="proj-tag">Literatura · Competição</span>
+                    <h3 class="proj-nome">Copa das Autoras</h3>
+                    <p class="proj-desc">Competição literária sobre futebol feminino. 1ª Edição 2026/2027.</p>
+                    <span class="proj-stack">Java · Spring Boot · JavaScript · REST API</span>
+                    <span class="proj-arrow">→</span>
+                </a>
+
+            </div>
+        </section>
+
+        <div class="divisor">
+            <span class="divisor__losango"></span>
+        </div>
+
+        <section class="sobre-faixa">
+            <span class="sobre-label">Quem sou</span>
+            <div class="sobre-conteudo">
+                <div class="sobre-foto-wrapper">
+                    <img src="assets/foto_perfil.jpeg" alt="Foto de Lu Castro" class="sobre-foto">
+                </div>
+                <div class="sobre-texto">
+                    <p>
+                        Pesquisadora, curadora e Analista e Desenvolvedora de Sistemas.
+                        Minha trajetória conecta o campo — exposições, livros, festivais,
+                        documentários — ao código: plataformas digitais que preservam a
+                        memória esportiva e democratizam o acesso à história das atletas brasileiras.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Futebol feminino</span>
+                        <span class="tag">Memória esportiva</span>
+                        <span class="tag">Desenvolvimento de software</span>
+                        <span class="tag">Curadoria</span>
+                        <span class="tag">INPI</span>
+                    </div>
+                    <a href="about.html" class="btn-fantasma" style="display:inline-block; margin-top: 28px;">Saiba mais</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer class="rodape">
-        <p>
-            2025 - Desenvolvido por Luciane de Castro
-        </p>
+        <span class="rodape__nome">Luciane de Castro</span>
+        <span class="rodape__ano">2025</span>
     </footer>
 
 </body>
-
 </html>
-```
